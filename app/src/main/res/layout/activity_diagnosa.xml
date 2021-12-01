@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/grenday">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang"
+
+            android:layout_marginRight="15px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+
+            android:textSize="23dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tvNamaUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+
+            android:textSize="23dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" !"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+
+            android:textSize="23dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DiagnosaActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="20px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/grenday"
+                android:layout_marginBottom="20dp"
+                android:text="Pilih Gejala yang dialami \noleh ikan Guppy Anda"
+                />
+            <CheckBox android:id="@+id/checkbox_bintik_putih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bintik-bintik Putih"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_nafsu_makan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kehilangan Nafsu Makan"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_mengelupas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kulit Mengelupas"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_menggosokan_kulit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ikan Menggosokan Kulit pada Sekeliling"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_berdarah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berdarah"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_infeksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infeksi/Jamuran"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_menempel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sirip atau Ekor Menempel"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_bintik_merah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bintik-bintik Merah"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_rusak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sirip atau Ekor Rusak"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_kesulitan_berenang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesulitan Berenang"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_bengkak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bengkak"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_warna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perubahan Warna Ikan"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_terdistorsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bentuk Badan Terdistorsi"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_sisik_menonjol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sisik Menonjol"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_terengah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terengah-engah di Permukaan"
+                android:onClick="onCheckboxClicked"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diagnosa Penyakit"
+                android:id="@+id/btn_submit"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:background="@color/grenday"
+                android:onClick="submitSelection"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50dp"/>
+            <!--        Kemungkinan bisa muncul 2 penyakit atau lebih untuk bagian ini-->
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

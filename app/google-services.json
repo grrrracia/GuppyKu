@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "865889035241",
+    "project_id": "guppyku-b21e5",
+    "storage_bucket": "guppyku-b21e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865889035241:android:8b4e5c49edaa62f1062178",
+        "android_client_info": {
+          "package_name": "id.ac.umn.guppyku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865889035241-fr148vocv9g24ac8ebgoncjhilv6hr0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfIGme90Tku7IXs3B9T-8MyemQa624zlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865889035241-fr148vocv9g24ac8ebgoncjhilv6hr0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
