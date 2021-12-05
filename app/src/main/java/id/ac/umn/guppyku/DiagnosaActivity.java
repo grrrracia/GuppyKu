@@ -81,23 +81,43 @@ public class DiagnosaActivity extends AppCompatActivity {
                 probF = (countF/2) * 100;
 
                 String solusiA, solusiB, solusiC, solusiD, solusiE, solusiF, solusiAkhir;
-                solusiA="Solusi A";
-                solusiB="Solusi B";
-                solusiC="Solusi C";
-                solusiD="Solusi D";
-                solusiE="Solusi E";
-                solusiF="Solusi F";
+                solusiA="- masukkan guppy ke air dalam wadah terpisah yang sudah diberi garam ikan.\n" +
+                        "- beri ikan guppy , obat anti whitespot dalam dosis yang disarankan.\n" +
+                        "- jaga kestabilan suhu dan ph air.\n" +
+                        "- sedot kotoran dan lakukan pergantian air apabila sudah terlihat kotor.\n" +
+                        "- lakukan tahap ini selama 5-7 hari.\n" +
+                        "- ganti air wadah secara keseluruhan setelah ikan terbebas dari penyakit.";
+                solusiB="- masukkan guppy ke air dalam wadah terpisah yang sudah diberi garam ikan.\n" +
+                        "- beri ikan guppy , obat anti whitespot dalam dosis yang disarankan.\n" +
+                        "- jaga kestabilan suhu dan ph air.\n" +
+                        "- sedot kotoran dan lakukan pergantian air apabila sudah terlihat kotor.\n" +
+                        "- lakukan tahap ini selama 5-7 hari.\n" +
+                        "- ganti air wadah secara keseluruhan setelah ikan terbebas dari penyakit.";
+                solusiC="- masukkan guppy ke air dalam wadah terpisah yang sudah diberi garam ikan.\n" +
+                        "- beri ikan guppy , obat anti whitespot dalam dosis yang disarankan.\n" +
+                        "- jaga kestabilan suhu dan ph air.\n" +
+                        "- sedot kotoran dan lakukan pergantian air apabila sudah terlihat kotor.\n" +
+                        "- lakukan tahap ini selama 5-7 hari.\n" +
+                        "- ganti air wadah secara keseluruhan setelah ikan terbebas dari penyakit.";
+                solusiD="- masukkan guppy ke air dalam wadah terpisah yang sudah diberi garam ikan.\n" +
+                        "- beri ikan guppy , obat anti whitespot dalam dosis yang disarankan.\n" +
+                        "- jaga kestabilan suhu dan ph air.\n" +
+                        "- sedot kotoran dan lakukan pergantian air apabila sudah terlihat kotor.\n" +
+                        "- lakukan tahap ini selama 5-7 hari.\n" +
+                        "- ganti air wadah secara keseluruhan setelah ikan terbebas dari penyakit.";
+                solusiE="- masukkan guppy ke air dalam wadah terpisah yang sudah diberi garam ikan.\n" +
+                        "- beri ikan guppy , obat anti whitespot dalam dosis yang disarankan.\n" +
+                        "- jaga kestabilan suhu dan ph air.\n" +
+                        "- sedot kotoran dan lakukan pergantian air apabila sudah terlihat kotor.\n" +
+                        "- lakukan tahap ini selama 5-7 hari.\n" +
+                        "- ganti air wadah secara keseluruhan setelah ikan terbebas dari penyakit.";
+                solusiF="- masukkan guppy ke air dalam wadah terpisah yang sudah diberi garam ikan.\n" +
+                        "- beri ikan guppy , obat anti whitespot dalam dosis yang disarankan.\n" +
+                        "- jaga kestabilan suhu dan ph air.\n" +
+                        "- sedot kotoran dan lakukan pergantian air apabila sudah terlihat kotor.\n" +
+                        "- lakukan tahap ini selama 5-7 hari.\n" +
+                        "- ganti air wadah secara keseluruhan setelah ikan terbebas dari penyakit.";
                 solusiAkhir="";
-
-                TextView tvResults=(TextView) popupView.findViewById(R.id.tvResults);
-
-                tvResults.setText("White Spots = "+probA+"\n"+
-                        "Velvet = "+probB+"\n"+
-                        "Fin Rot = "+probC+"\n"+
-                        "Columnaris dan Jamur Mulut = "+probD+"\n"+
-                        "Dropsy = "+probE+"\n"+
-                        "Insang Bengkak dan Terengah = "+probF+"\n"+
-                        "Solusi Penyakit "+solusiAkhir);
 
                 if (probA > probB && probA>probC && probA>probD && probA>probE && probA>probF){
                     solusiAkhir=solusiA;
@@ -117,6 +137,16 @@ public class DiagnosaActivity extends AppCompatActivity {
                 if (probF > probA && probF>probB && probF>probC && probF>probD && probF>probE){
                     solusiAkhir=solusiF;
                 }
+
+                TextView tvResults=(TextView) popupView.findViewById(R.id.tvResults);
+
+                tvResults.setText("White Spots = "+probA+"\n"+
+                        "Velvet = "+probB+"\n"+
+                        "Fin Rot = "+probC+"\n"+
+                        "Columnaris dan Jamur Mulut = "+probD+"\n"+
+                        "Dropsy = "+probE+"\n"+
+                        "Insang Bengkak dan Terengah = "+probF+"\n"+
+                        "Solusi Penyakit:\n"+solusiAkhir);
 
                 List<Float> probabilities = new ArrayList<>();
                 probabilities.add(probA);
